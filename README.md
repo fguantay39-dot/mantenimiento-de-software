@@ -29,14 +29,23 @@ mantenimiento-de-software/
     │       ├── 03_info_sistema.png
     │       └── 04_red_espacio.png
     │
-    └── tp-usuarios-y-grupos/
+    ├── tp-usuarios-y-grupos/
+    │   ├── README.md
+    │   └── assets/
+    │       ├── 01_creacion_grupo_usuario.png
+    │       ├── 02_pertenencia_grupos.png
+    │       ├── 03_modificacion_usuario.png
+    │       ├── 04_ficheros_configuracion.png
+    │       └── 05_eliminacion_usuario_grupo.png
+    │
+    └── tp-permisos-y-propiedad/
         ├── README.md
         └── assets/
-            ├── 01_creacion_grupo_usuario.png
-            ├── 02_pertenencia_grupos.png
-            ├── 03_modificacion_usuario.png
-            ├── 04_ficheros_configuracion.png
-            └── 05_eliminacion_usuario_grupo.png
+            ├── 01_lectura_permisos_ls.png
+            ├── 02_chmod_octal.png
+            ├── 03_chmod_simbolico.png
+            ├── 04_cambio_propietario_grupo.png
+            └── 05_chmod_recursivo.png
 ```
 
 ## Trabajos Prácticos de Laboratorio
@@ -60,3 +69,10 @@ mantenimiento-de-software/
    * Modificación de atributos de usuario preexistentes (`usermod -d`).
    * Inspección y análisis de ficheros de configuración (`/etc/passwd`, `/etc/group`, `/etc/shadow`).
    * Eliminación segura de cuentas y grupos (`userdel -r`, `groupdel`).
+
+4. **[TP 4: Permisos de Archivos, Directorios y Propiedad en Linux](linux/tp-permisos-y-propiedad/README.md)**
+   * Lectura e interpretación del formato largo (`ls -l`, tipos `-`, `d`, `l`, tríadas `rwx`).
+   * Asignación de permisos en modo octal (`chmod 640`, `chmod 755`).
+   * Asignación de permisos en modo simbólico (`chmod go-x`, `chmod a+w`).
+   * Cambio de grupo y propietario (`chgrp`, `chown` con privilegios `sudo`).
+   * Permisos recursivos sobre directorios (`chmod -R 700`) e importancia del bit de ejecución (`x`).
