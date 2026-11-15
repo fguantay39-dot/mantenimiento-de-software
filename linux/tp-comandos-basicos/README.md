@@ -8,6 +8,20 @@
 ---
 
 ## 1. Gestión de Archivos y Directorios
+
+La administración diaria en Linux requiere moverse con fluidez por el sistema de archivos y manipular elementos de forma eficiente.
+
+### Comandos ejecutados en la terminal:
+```bash
+pwd
+mkdir practica_comandos
+cd practica_comandos
+touch archivo_original.txt
+cp archivo_original.txt copia_archivo.txt
+ls -al
+```
+
+### Evidencia:
 ![Navegación y archivos](assets/01_navegacion_archivos.png)
 
 * **Explicación de `ls -al`:**  
@@ -17,7 +31,18 @@ El comando `ls` simple únicamente muestra los nombres de los archivos y carpeta
 
 ---
 
-## 2. Monitoreo de Procesos
+## 2. Monitoreo y Control de Procesos
+
+Para un desarrollador o administrador de sistemas, es fundamental conocer qué programas se están ejecutando y cómo actuar ante un bloqueo.
+
+### Comandos ejecutados:
+```bash
+ps
+top
+```
+*(Para salir del monitor interactivo `top`, se presiona la tecla `q`, o `h` para ayuda).*
+
+### Evidencia:
 ![Procesos y Top](assets/02_procesos_top.png)
 
 * **Diferencia entre `ps` y `top`:**  
@@ -28,7 +53,19 @@ El comando `kill pid` (donde *pid* representa el identificador numérico del pro
 
 ---
 
-## 3. Información del Sistema
+## 3. Información del Sistema y del Núcleo (Kernel)
+
+Conocer la arquitectura del hardware y los recursos disponibles es el primer paso antes de realizar cualquier mantenimiento o despliegue.
+
+### Comandos ejecutados:
+```bash
+uname -a
+arch
+cat /proc/cpuinfo
+free
+```
+
+### Evidencia:
 ![Información del sistema](assets/03_info_sistema.png)
 
 * **Detalles del Kernel y Memoria:**  
@@ -37,7 +74,17 @@ El comando `kill pid` (donde *pid* representa el identificador numérico del pro
 
 ---
 
-## 4. Red y Espacio en Disco
+## 4. Diagnóstico de Red y Espacio en Disco
+
+Verificar la conectividad básica y el almacenamiento disponible evita fallas críticas en los servidores.
+
+### Comandos ejecutados:
+```bash
+df
+ping -c 4 8.8.8.8
+```
+
+### Evidencia:
 ![Red y Espacio](assets/04_red_espacio.png)
 
 * **Funcionamiento de `ping`:**  
