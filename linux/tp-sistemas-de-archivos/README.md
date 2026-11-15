@@ -1,7 +1,7 @@
 # TP: Sistema de Archivos en Linux
 
 * **Materia:** Mantenimiento de Software
-* **Estudiante:** Franco Guan
+* **Estudiante:** Franco Guantay
 * **Fecha de Entrega:** 2026
 * **Profesor:** Artaza
 
